@@ -1,0 +1,106 @@
+.agents-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.agents-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.agents-header p {
+  color: var(--color-text-secondary);
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.agent-card {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.agent-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.agent-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.agent-card-header h3 {
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+}
+
+.status-badge {
+  background-color: rgba(46, 204, 143, 0.1);
+  color: var(--color-success);
+  padding: 4px 8px;
+  border-radius: var(--radius-xl);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.agent-desc {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.agent-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.agent-insights {
+  margin-top: 12px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-insights h4 {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.insights-content {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  max-height: 150px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.insights-content::-webkit-scrollbar {
+  width: 4px;
+}
+.insights-content::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 4px;
+}

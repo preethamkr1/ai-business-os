@@ -1,0 +1,63 @@
+.startup-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.startup-card {
+  width: 100%;
+  max-width: 800px;
+}
+
+.startup-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 16px;
+}
+
+.startup-header h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.startup-header p {
+  color: var(--color-text-secondary);
+}
+
+.startup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group textarea {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  resize: vertical;
+  outline: none;
+}
+
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.analyze-btn {
+  margin-top: 16px;
+  align-self: flex-start;
+  padding: 12px 32px;
+}

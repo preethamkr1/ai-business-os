@@ -1,0 +1,8 @@
+date,campaign_name,ad_spend,impressions,clicks,conversions,revenue
+2026-06-01,Summer Sale,500,50000,2500,120,8500
+2026-06-02,Summer Sale,550,52000,2600,135,9200
+2026-06-03,Summer Sale,600,60000,3100,150,11000
+2026-06-04,Retargeting,200,15000,1200,80,6400
+2026-06-05,Retargeting,250,18000,1400,95,7200
+2026-06-06,Email Blast,50,10000,800,60,4500
+2026-06-07,Email Blast,50,12000,900,65,4800

@@ -1,0 +1,120 @@
+.growth-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.growth-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.growth-header p {
+  color: var(--color-text-secondary);
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 24px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.upload-icon {
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.upload-desc {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin: 8px 0 24px 0;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.file-label:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+.upload-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.status-msg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+}
+
+.status-msg.success {
+  background-color: rgba(46, 204, 143, 0.1);
+  color: var(--color-success);
+}
+
+.status-msg.error {
+  background-color: rgba(240, 85, 91, 0.1);
+  color: var(--color-danger);
+}
+
+.csv-insights {
+  margin-top: 24px;
+  width: 100%;
+}
+.insights-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-top: 12px;
+  text-align: left;
+}
+.insights-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.preview-table {
+  margin-top: 16px;
+  background-color: var(--color-panel);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  overflow-x: auto;
+}
+.preview-table pre {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+}
+
